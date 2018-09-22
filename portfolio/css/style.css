@@ -1,6 +1,7 @@
 nav{
     background-color:	 #ffaa80;
     margin: -10px;
+    color:  #000000;
 }
 
 nav a{
@@ -12,7 +13,7 @@ padding: 20px;
 nav li{
     display: inline-block;
     padding: 0px, 30px;
-    color:  black;
+    color:  #000000;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 150%;
     list-style-position: center;
@@ -23,5 +24,5 @@ nav li:hover{
 }
 
 nav a:visited{
-    color: black;
+    color: #000000
 }
