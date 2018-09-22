@@ -1,0 +1,27 @@
+nav{
+    background-color:	 #ffaa80;
+    margin: -10px;
+}
+
+nav a{
+text-decoration: none;
+margin: 80px;
+padding: 20px;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px, 30px;
+    color:  black;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 150%;
+    list-style-position: center;
+}
+
+nav li:hover{
+    background-color: #3385ff;
+}
+
+nav a:visited{
+    color: black;
+}
