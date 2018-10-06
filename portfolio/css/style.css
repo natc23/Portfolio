@@ -1,29 +1,145 @@
-nav{
-    background-color:	 #ffaa80;
-    margin: -10px;
-    color:  #000000;
+header{
+    background-color:   #000066;
+    width: 100vw;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
+
+
 nav a{
-text-decoration: none;
-margin: 80px;
-padding: 20px;
-color:  #000000;
+    text-decoration: none;
+    color:  #000000;
+    margin: 60px; 
+    padding: 15px;
 }
 
 nav li{
     display: inline-block;
-    padding: 0px, 30px;
-    color:  #000000;
+    /* padding: 0px, 30px; 
+    color:  #000000; */
+    color: #3385ff;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 150%;
     list-style-position: center;
 }
 
-nav li:hover{
-    background-color: #3385ff;
+nav a:visited{
+    color:#ffffff
 }
 
-nav a:visited{
-    color: #000000
+nav a:hover{
+    /*background-color: #ffaa80;
+    color: #ff8080; */
+    text-decoration: underline;
+}
+
+nav a.current{
+    border-color: #ffffff
+    border-style: solid;
+    padding: 10px;
+}
+
+body{
+    background-color:  #ffe6e6
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 60px;
+    border-color:  #3385ff;
+    border-style: dashed;
+    background-color:lightyellow;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.work{
+
+    flex-direction: row;
+    order: -1;
+    flex-grow: 5;
+}
+
+p.work_d{
+   flex-wrap: nowrap;
+   margin: 20px;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+}
+
+
+
+div.about{
+    display: inline-grid;
+    grid-template-columns: 5% 20% 75%;
+    grid-template-rows: 10% 40% 80%;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+
+
+}
+
+div.about_text{
+    display: inline-grid;
+    grid-column: 3/3;
+    grid-row: 1/2;
+    justify-self: center;
+    margin-right: 7%;
+    font-family: 'Arial', serif;
+}
+
+div.title{
+    display: inline-grid;
+    grid-column: 1;
+    grid-row: 1/2;
+    transform-origin: right;
+    transform: rotate(270deg);
+    justify-self: start;
+    margin-bottom: 10%;
+    letter-spacing: 1.2eM;
+    font-family: 'Bitter', 'Arial', serif;
+
+}
+
+
+div.portrait{
+    display: inline-grid;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    align-self: center;
+    padding-top: 32%;
+ 
+
+}
+
+div.name{
+    display: inline-grid;
+    grid-row: 1;
+    justify-content: center;
+    padding-right: 7%;
+}
+
+div.resume{
+    display: inline-grid;
+    grid-column: 3;
+    grid-row-start: 2;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.resume_file{
+    height: 115%;
+    width: 70%;
+
+}
+
+div.home{
+    background-image: url(../images/jellyfish.jpg);
+    color: #ffffff;
 }

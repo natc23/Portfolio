@@ -11,12 +11,11 @@
 <body>
 
 <header>
-    <nav>    
-        <img src = "images/natalielogo.png" alt = "Natalie's personal logo">            
+    <nav>            
         <ul>
             <li><a href = "index.html"> Home </a></li>
-            <li class = "current"><a href = "about.html"> About </a></li>
-            <li><a href = "worksamples.html"> Work Samples </a></li>
+            <li><a href = "about.html"> About </a></li>
+            <li><a href = "worksamples.html" class="current"> Work Samples </a></li>
             <li><a href = "contact.html"> Contact </a></li>
          </ul>
      </nav>
@@ -24,27 +23,29 @@
 
     <h1> Work Samples </h1>
 
-        <h2> University of Michigan ITS Internship Website Redesign</h2>
+        <div class="container">
+        <h2 class="title"> University of Michigan ITS Internship Website Redesign</h2>
 
-        <iframe src="interncohortproject.pdf" ></iframe>
+        <iframe src="interncohortproject.pdf" class = "work"></iframe>
 
-        <p> 
+        <p class = "work_d"> 
 
             This poster explainins the iterations and process used to reach the final product of the redesigned internship website.
-        </p> 
-           
-        <p>
+        <br/>
             To redesign this website, I worked with a team of three other interns to:
         </p>
-            <ul>
+            <ul class = "work_d">
                 <li>Perform initial surveying to learn requirements.</li>
                <li>Streamline the application process using a Drupal webform in place of a Qualtrics survey.</li>
                 <li>Use the Marvel application to create mockups and perform A-B user testing. </li>
                 <li>Convert the site from “dumped HTML” to Drupal framework for easier maintenance.</li>
             </ul>
 
-        <a href = "http://its.umich.edu/internship/"> Click here to view the U-M ITS Internship website</a>
+        <a href = "http://its.umich.edu/internship/" class = "work_d"> Click here to view the U-M ITS Internship website</a>
 
+        </div>
+
+        <div class = "container">
         <h2> Michigan Sports Analytics Society Informative Report</h2>
         <img src = "images/msasinfo.png" alt = "infographic explaining the benefits of joining MSAS (exciting project, weekly meetings, club events)">
 
@@ -53,6 +54,10 @@
         </p>
         <iframe src = "msasinformativereport.pdf" ></iframe>
 
+        </div>
+
+        <div class = "container">
+
         <h2> Itunes API Project</h2>
 
         <img src="images/itunescode.png" alt = "output given by the Itunes API Project showing 10 results given when Scooby Doo is searched">
@@ -60,6 +65,9 @@
         <p> This picture is of the output given for a project I coded using the iTunes API. This project also utilized concepts such as unit testing, JSON, and object-oriented programming.</p>
         <a href = "https://github.com/natc23/SI-206-Project1-Itunes"> Github Repository of Itunes API Project</a>
         <p> This Github repository also includes more details about the specifics and purpose of the project.</p>
+
+        </div>
+
 
 </body>
 </html>
