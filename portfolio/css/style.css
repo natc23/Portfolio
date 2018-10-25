@@ -176,6 +176,10 @@ div.r_title{
 
 }
 
+.r_link{
+    display: none;
+}
+
 
 div.home{
     background-image: url(../images/jellyfish.jpg);
@@ -334,23 +338,23 @@ div.portrait{
 }
 
 div.resume{
-    margin-left: 20%;
+    margin-left: 0%;
     margin-top: 5%;
 }
 
 
 div.r_title{
-    display: block;
-    text-align: center; 
-    margin-left: 0%;
-    margin-right: 30%;
+    display: none;
 }
 
 .resume_file{
-    display: block;
-    margin-left: 0px;
-    height: 300px;
-    width: 200px;
+    display: none;
+}
+.r_link{
+    display: inline;
+    color: #000000;
+    font-size: 1.5em;
+    text-align: center;
 }
 }
 
