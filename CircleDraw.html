@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body onload="startGame()" onkeypress= "return colorChange(event)" onkeydown = "sizeChange()">
+
+       
+<script>
+
+
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(30, 30, 'red', 10, 120);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 800;
+        this.canvas.height = 500;
+        this.canvas.style.cursor = "none";
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+        window.addEventListener('mousemove', function (e) {
+            myGameArea.x = e.pageX;
+            myGameArea.y = e.pageY;
+        })
+    }, 
+    clear: function(){
+       this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.speedX = 0;
+    this.speedY = 0;    
+    this.color = color;
+    this.x = x;
+    this.y = y;    
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.fillStyle = this.color;
+        ctx.moveTo(this.x, this.y);
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.width, this.height,0, 2 * Math.PI, true);
+        ctx.fill();
+    }
+}
+
+function updateGameArea() {
+    if (myGameArea.x && myGameArea.y) {
+        myGamePiece.x = myGameArea.x;
+        myGamePiece.y = myGameArea.y;        
+    }
+   myGamePiece.update();
+}
+
+
+function colorChange() {
+    var keynum;
+    if(window.event) {                 
+      keynum = event.keyCode;
+    } else if(event.which){                 
+      keynum = event.which;
+    }
+  
+    if (String.fromCharCode(keynum) == 'b'){
+       ctx.closePath();
+        myGamePiece = new component(myGamePiece.width, 30, 'blue', 10, 120)
+    }
+
+    if (String.fromCharCode(keynum) == 'g'){
+       ctx.closePath();
+        myGamePiece = new component(myGamePiece.width, 30, 'green', 10, 120)
+    }
+    if (String.fromCharCode(keynum) == 'y'){
+       ctx.closePath();
+        myGamePiece = new component(myGamePiece.width, 30, 'yellow', 10, 120)
+    }
+    if (String.fromCharCode(keynum) == 'r'){
+       ctx.closePath();
+        myGamePiece = new component(myGamePiece.width, 30, 'red', 10, 120)
+    }
+
+}
+
+function sizeChange(){
+    var arrow;
+    if(window.event) {                   
+      arrow = event.keyCode;
+    } else if(event.which){               
+      arrow = event.which;
+    }
+    console.log(arrow)
+
+    if(arrow == 38 && myGamePiece.width <= 50){
+       ctx.closePath();
+        myGamePiece.width +=1
+    }
+    if(arrow == 40 && myGamePiece.width != 1){
+       ctx.closePath();
+        myGamePiece.width -=1
+    }
+    if(arrow == 32){
+       ctx.closePath();
+       myGameArea.clear()
+    }
+
+}
+
+
+
+</script>
+<p>Move the cursor inside the canvas to draw. Press "y" for the color yellow, "g" for green, "b" for blue, and "r" for red. Use the up arrow to increase the size of the pen and down to decrease the size of the pen. Clear the drawing by pressing space bar.</p>
+</body>
+</html>
+
