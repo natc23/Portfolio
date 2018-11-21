@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+	<link href="src/css/lightbox.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	
+	<title>Lightbox</title>
+</head>
+<body>
+
+		<button type="button" data-filter="all">All</button>
+		<button type="button" data-filter=".detroit">Detroit</button>
+		<button type="button" data-filter=".chicago">Chicago</button>
+		<button type="button" data-filter=".boston">Boston</button>
+
+
+	<div class = "gallery">
+		<div class= "mix detroit">
+		<a href="images/littlec.jpg" data-lightbox="place" data-title="Little Caesar's Arena"><img src="images/littlec.jpg" alt="Little Caesar's Arena"></a>
+		</div>
+		<div class= "mix detroit">
+		<a href="images/ltc.jpg" data-lightbox="place" data-title="Louis the Child Concert at the Masonic Temple"><img src="images/ltc.jpg" alt="Louis the Child Concert in Detroit"></a>
+		</div>
+		<div class= "mix chicago">
+		<a href="images/chi1.jpg" data-lightbox="place" data-title="Chicago Scenery"><img src="images/chi1.jpg" alt= "Chicago Scenery"></a>
+		</div>
+		<div class= "mix chicago">
+		<a href="images/chi2.jpg" data-lightbox="place" data-title="Chicago Scenery"><img src="images/chi2.jpg" alt= "Chicago Scenery"></a>
+		</div>
+		<div class= "mix boston">
+		<a href="images/bos1.jpg" data-lightbox="place" data-title="Boston Scenery"><img src="images/bos1.jpg" alt= "Boston Scenery"></a>
+		</div>
+		<div class= "mix boston">
+		<a href="images/bos2.jpg" data-lightbox="place" data-title="Boston Scenery"><img src="images/bos2.jpg" alt= "Boston Scenery"></a>
+		</div>
+		<div class= "mix boston">
+		<a href="images/Bos3.jpg" data-lightbox="place" data-title="Boston Scenery"><img src="images/Bos3.jpg" alt= "Boston scenery"></a>
+		</div>
+		<div class= "mix boston">
+		<a href="images/bos4.jpg" data-lightbox="place" data-title="Boston Scenery"><img src="images/bos4.jpg" alt= "Boston Scenery"></a>
+		</div>
+		<div class= "mix detroit">
+		<a href="images/tigers.jpg" data-lightbox="place" data-title="Detroit Tiger's Game"><img src="images/tigers.jpg" alt= "Detroit Tigers Baseball Game"></a>
+		</div>
+	</div>
+
+
+<script src="src/js/lightbox.js"></script>
+<script src="patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+<script> var mixer = mixitup('.gallery');</script>
+</body>
+</html>
