@@ -8,7 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <title>Contact</title>
 </head>
 <body>
     <main>
@@ -24,21 +26,31 @@
                 </nav>
             </header>
 
-    <h1> Contact </h1>
+    <div class= "contact">
 
-    <i class="far fa-address-card" aria-label= "address book image"></i>
+        <h1 class = "c_title"> Contact </h1>
 
-    <p> Feel free to reach out, I'm happy to chat!</p>
+        <i class="far fa-address-card fa-3x" aria-label= "address book image"></i>
 
-    <form>
-        Name:<br>
-        <input type="text" name="first name and last name" aria-label="first name and last name"><br>
-        Email:<br>
-        <input type="email" name="email" aria-label= "email address"><br>
-        Message:<br>
-        <input type= "text" name="Message" aria-label= "message">
-        
-      </form>
+        <p class="contact_mes"> Feel free to reach out, I'm happy to chat!</p>
+
+        <form class = "contact_form">
+            <fieldset>
+                <ul>
+                <li id="flname"><label>Name: <input type="text" name="flname" aria-label="first and last name" id ="flname" placeholder="First and Last"></label><br></li>
+                <li><label> Email: <input type="email" name="email" aria-label= "email address" id = "email"></label><br></li>
+                <li><label>Message: <textarea rows="12" cols="75" name="message" aria-label= "message to Natalie" id= "message"></textarea></label></li><br>
+                <input type="submit" value="Submit">
+                </ul>
+            </fieldset>
+        </form>
+
+    </div>
     </main>
+
+    <script>
+
+    </script>
+    
 </body>
 </html>

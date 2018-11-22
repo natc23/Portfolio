@@ -42,34 +42,94 @@ nav a.current{
 }
 
 body{
-    background-color:  #ffe6e6
+    background-color:  #ffe6e6;
+    /*max-width: 100%;*/
 }
+
+.slide_pics{
+    margin-left: 4%;
+    margin-right: 4%;
+    border: solid;
+    border-width: 1px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.home{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.home_p{
+    margin-left: 15%;
+    order:0;
+    border: solid;
+    border-color: #ffc0cb;
+    border-width: 1px;
+    border-radius: 5%;
+}
+
+.home_n{
+    font-size: 3em;
+    font-family: 'Bitter', 'Arial', serif;
+    order:2;
+
+}
+
+.home_d{
+    order:2;
+    font-family: 'Roboto', serif;
+
+}
+.home_a{
+    display:flex;
+    flex-direction: column;
+    padding-left: 10%;
+    justify-content: center;
+    padding-bottom: 5%;
+    line-height: 400%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.home_d{
+    line-height: 150%;
+}
+
+
 
 .container{
     display: flex;
     justify-content: center;
     /*justify-content: space-around;*/
-    border-color:  #3385ff;
-    border-style: dashed;
-    background-color:lightyellow;
     flex-wrap: nowrap;
     flex-direction: row;
     padding-left: 3%;
     padding-bottom: 3%;
     padding-top: 3%;
-    padding: 3%;
+    padding:3%;
     justify-content: center;
+
 }
 
 .ws_description{
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #000066;
+    border-width: 4px;
     display:flex;
     flex-direction: column;
     margin-left: 3%;
-    padding-top: 2%;
+    padding-top: 7%;
 }
 
 .w_title{
     text-align: center;
+    padding-bottom: 2%;
+    font-family: 'Roboto', serif;
+    font-size: 123%;
+    padding-bottom: 3%;
     
 }
 
@@ -84,11 +144,56 @@ body{
 
 .work_d{
    flex-wrap: nowrap;
-   text-align: center;
+   text-align: left;
+   line-height: 130%;
+   padding-bottom: 2%;
+   font-family: 'Arial', serif;
+   font-size: 95%;
+   width:90%;
+   padding-left:8%;
 }
 
-.work_d:visited{
-    color: #000000;
+.work_rd{
+    text-align: center;
+    line-height: 130%;
+    font-family: 'Arial', serif;
+    font-size: 95%;
+    
+}
+
+.work_rd:visited{
+    color: #000066;
+}
+
+.w_link{
+    color: #000066;
+}
+
+.msas{
+    padding-top: 12%;
+    line-height: 15%;
+}
+
+.msas_w{
+    padding-left:38%;
+    padding-top:3%;
+}
+
+.itunes_w{
+    flex-direction: row;
+    order: -1;
+}
+
+.itunes{
+    padding-top:3.5%;
+}
+
+.ws_title{
+    font-size: 2em;
+    font-family: 'Bitter', 'Arial', serif;
+    text-align: center;
+    padding-left: 55%;
+    margin-top: 2%;
 }
 
 
@@ -181,10 +286,64 @@ div.r_title{
 }
 
 
-div.home{
-    background-image: url(../images/jellyfish.jpg);
-    color: #ffffff;
+
+
+.contact{
+    margin: 3%;
 }
+
+.contact_form{
+    margin: 5%;
+    text-decoration: none;
+    font-family: 'Arial', serif;
+
+}
+
+form li{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+}
+
+#flname{
+    display: inline-block;
+    margin-bottom: 1%;
+    padding-right: 2%;
+
+
+}
+#email{
+    display: inline-block;
+}
+
+#message{
+    font-size: 1.1em;
+    display: block;
+}
+
+
+.c_title{
+    font-size: 2em;
+    margin-bottom: 2%;
+    display: inline-block;
+    padding-right: 2%;
+    padding-left: 4%;
+    font-family: 'Bitter', 'Arial', serif;
+}
+
+.contact_mes{
+    padding-left: 4%;
+    font-family: 'Arial', serif;
+}
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1100px){
 
