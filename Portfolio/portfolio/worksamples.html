@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="src/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/natalielogo.png"/>
+    <title>Work Samples</title>
+</head>
+<body>
+
+<header>
+    <nav>            
+        <ul>
+            <li><a href = "index.html"> Home </a></li>
+            <li><a href = "about.html"> About </a></li>
+            <li><a href = "worksamples.html" class="current"> Work Samples </a></li>
+            <li><a href = "contact.html"> Contact </a></li>
+         </ul>
+     </nav>
+</header>
+    <main>
+
+    <h1 class="ws_title"> Work Samples </h1>
+
+        <div class="container">
+
+            <a href="interncohortproject.pdf" alt="ITS Internship Website Redesign Poster"><img src = "images/interncohortproject.png"class ="work" alt= "A poster from Natalie's internship depicting the challenge and solutions of the website redesgign project."></a>
+            <div class= "ws_description">
+                
+                <h2 class="w_title"> University of Michigan ITS Internship Website Redesign</h2>
+
+                <p class = "work_rd"> 
+
+                    This poster explainins the iterations and process used to reach the final product of the redesigned internship website.
+                </p><br/><br/>
+                   <p class="work_rd"> To redesign this website, I worked with a team of three other interns to:
+                </p ><br>
+                <ul class="work_d"> 
+                    <li>Perform initial surveying to learn requirements.</li>
+                <li>Streamline the application process using a Drupal webform in place of a Qualtrics survey.</li>
+                    <li>Use the Marvel application to create mockups and perform A-B user testing. </li>
+                    <li>Convert the site from “dumped HTML” to Drupal framework for easier maintenance.</li>
+                </ul>
+
+            <a href = "http://its.umich.edu/internship/" class = "work_rd w_link"> Click to view the U-M ITS Internship website</a>
+
+            </div>
+
+        </div>
+
+        <div class = "container">
+
+        <img class="work" src = "images/msasinfo.png" alt = "infographic explaining the benefits of joining MSAS (exciting project, weekly meetings, club events)">
+        <div class= "ws_description msas">
+                <h2 class="w_title"> Michigan Sports Analytics Society Informative Report</h2>
+        <p class="work_rd">
+                The link below is an informative report I wrote for a business communications class. This report is about the Michigan Sports Analytics Society (MSAS) and includes information from an interview I conducted with the president of MSAS. The picture to the right is of an infographic I created for the club.
+        </p>
+        <p class="work_rd">
+                This report showcases my abilities to:
+        </p>
+        <ul class="work_d msas_w"> 
+                <li>Write concisely and effectively</li>
+            <li>Perform research</li>
+                <li>Analyze</li>
+
+            </ul>
+        <a class="work_rd w_link" href= "msasinformativereport.pdf" alt="A memo describing Michigan's Sport Analytis Society">Click to view the MSAS Informative Report</a>
+
+            </div>
+        </div>
+
+
+
+        <div class = "container">
+
+
+        <img class="itunes_w" src="images/itunescode.png" alt = "output given by the Itunes API Project showing 10 results given when Scooby Doo is searched">
+
+        <div class= "ws_description itunes">
+                <h2 class="w_title"> Itunes API Project</h2>
+        <p class="work_rd"> This picture is of the output given for a project I coded using the iTunes API. This project also utilized concepts such as unit testing, JSON, and object-oriented programming.</p><br>
+        <a class="work_rd w_link" href = "https://github.com/natc23/SI-206-Project1-Itunes"> Github Repository of Itunes API Project</a><br>
+        <p class="work_rd"> This Github repository also includes more details about the specifics and purpose of the project.</p>
+
+        </div>
+    </div>
+        <button id="myBtn" title="Go to top">Go To Top</button>
+    </main>
+
+    <script>
+            $('#myBtn').click(function(){
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+
+    </script>
+</body>
+</html>

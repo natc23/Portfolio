@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick_stuff/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick_stuff/slick/slick-theme.css"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/natalielogo.png"/>
+    <title>Natalie Cieslak</title>
+    
+</head>
+<body>
+
+        <header>
+                <nav>
+                <ul>  
+                    <li><a href = "index.html" class="current"> Home </a></li>
+                    <li><a href = "about.html"> About </a></li>
+                    <li><a href = "worksamples.html"> Work Samples </a></li>
+                    <li><a href = "contact.html"> Contact </a></li>
+                </ul>
+                </nav>
+            </header>
+
+    <main>
+
+    <div class="home">
+            <img class="home_p" src= "images/bostonportrait.JPG" alt = "Natalie in Boston to show what she looks like">
+        <div class="home_a">
+            <h1 class="home_n home_t"> Natalie Cieslak</h1>
+            <h2 class="home_d home_t"> Aspiring UX designer/researcher and/or web developer. Check out my work!</h2>
+        </div>
+    
+</div>
+    <div class= "slide_pics">
+    <div><img class="pics" data-lazy = "images/itsinterns.jpg" alt = "the 2018 University of Michigan ITS Summer Intern Cohort to show Natalie's co-workers"></div>
+    <div><img class="pics" data-lazy = "images/atlasgroup.png" alt = "Natalie's consulting group to show you the size and members"></div>
+    <div><img class="pics" data-lazy = "images/flagfootball.png" alt = "Natalie's intramural flag football team to show her activities"></div>
+    <div><img class="pics" data-lazy = "images/sbalca.png" alt = "Natalie's sport business association group at the Little Caesar's Arena to show her club and their activities"></div>
+    </div>
+
+    </main>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick_stuff/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slide_pics').slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            variableWidth: true,
+            adaptiveHeight: true
+        });
+                    });
+     </script>
+
+</body>
+</html>
