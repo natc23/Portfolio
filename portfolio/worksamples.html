@@ -11,11 +11,13 @@
     <link href="src/css/lightbox.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/natalielogo.png"/>
     <title>Work Samples</title>
 </head>
 <body>
 
 <header>
+        <a class="skip-main" href="#main">Skip to main content</a>
     <nav>            
         <ul>
             <li><a href = "index.html"> Home </a></li>
@@ -25,13 +27,13 @@
          </ul>
      </nav>
 </header>
-    <main>
+    <main id="main" tabindex="0">
 
     <h1 class="ws_title"> Work Samples </h1>
 
         <div class="container">
 
-            <a href="interncohortproject.pdf" alt="ITS Internship Website Redesign Poster"><img src = "images/interncohortproject.png"class ="work" alt= "A poster from Natalie's internship depicting the challenge and solutions of the website redesgign project."></a>
+            <a href="interncohortproject.pdf" aria-label="ITS Internship Website Redesign Poster"><img src = "images/interncohortproject.png" class ="work" alt= "A poster from Natalie's internship depicting the challenge and solutions of the website redesgign project."></a>
             <div class= "ws_description">
                 
                 <h2 class="w_title"> University of Michigan ITS Internship Website Redesign</h2>
@@ -49,7 +51,7 @@
                     <li>Convert the site from “dumped HTML” to Drupal framework for easier maintenance.</li>
                 </ul>
 
-            <a href = "http://its.umich.edu/internship/" class = "work_rd w_link"> Click to view the U-M ITS Internship website</a>
+            <a href = "http://its.umich.edu/internship/" class = "work_rd w_link" aria-label="The University of Michigan ITS Internship Website"> Click to view the U-M ITS Internship website</a>
 
             </div>
 
@@ -61,7 +63,7 @@
         <div class= "ws_description msas">
                 <h2 class="w_title"> Michigan Sports Analytics Society Informative Report</h2>
         <p class="work_rd">
-                The link below is an informative report I wrote for a business communications class. This report is about the Michigan Sports Analytics Society (MSAS) and includes information from an interview I conducted with the president of MSAS. The picture to the right is of an infographic I created for the club.
+                The link below is an informative report I wrote for a business communications class. This report is about the Michigan Sports Analytics Society (MSAS) and includes information from an interview I conducted with the president of MSAS. The picture is of an infographic I created for the club.
         </p>
         <p class="work_rd">
                 This report showcases my abilities to:
@@ -72,7 +74,7 @@
                 <li>Analyze</li>
 
             </ul>
-        <a class="work_rd w_link" href= "msasinformativereport.pdf" alt="A memo describing Michigan's Sport Analytis Society">Click to view the MSAS Informative Report</a>
+        <a class="work_rd w_link" href= "msasinformativereport.pdf">Click to view the MSAS Informative Report</a>
 
             </div>
         </div>
@@ -91,7 +93,15 @@
         <p class="work_rd"> This Github repository also includes more details about the specifics and purpose of the project.</p>
 
         </div>
-
+    </div>
+        <button id="myBtn" title="Go to top">Go To Top</button>
     </main>
+
+    <script>
+            $('#myBtn').click(function(){
+            $('html, body').animate({scrollTop:0}, 'slow');
+        });
+
+    </script>
 </body>
 </html>

@@ -1,5 +1,31 @@
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
 header{
-    background-color:   #000066;
+    background-color:    #000066;
     width: 100vw;
     height: 10vh;
     display: inline-block;
@@ -14,8 +40,10 @@ header{
 nav a{
     text-decoration: none;
     color:  #ffffff;
-    margin: 60px; 
-    padding: 30px;
+    margin: 70px; 
+
+    font: bold;
+    background-color: #000066;
 }
 
 nav li{
@@ -196,11 +224,37 @@ body{
     margin-top: 2%;
 }
 
+#myBtn {
+    margin-left: 80%;
+    margin-bottom: 3%;
+	-moz-box-shadow:inset 0px 34px 0px -15px #000066;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #000066;
+	box-shadow:inset 0px 34px 0px -15px #000066;
+	background-color:#000066;
+	border:1px solid #0707ba;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #000066;
+}
+#myBtn:hover {
+	background-color:#000066;
+}
+#myBtn:active {
+	position:relative;
+	top:1px;
+}
+
 
 div.about{
     display: inline-grid;
     grid-template-columns: 5% 20% 75%;
-    grid-template-rows: 10% 40% 80%;
+    grid-template-rows: 10% 40% 10%;
     grid-column-gap: 2%;
     grid-row-gap: 2%;
 
@@ -236,9 +290,9 @@ div.title{
 div.portrait{
     display: inline-grid;
     grid-column: 2/2;
-    grid-row: 1/1;
+    grid-row: 1/2;
     align-self: center;
-    margin-top: 20%;
+    margin-top: 150%;
     margin-right: 9%;
  
 
@@ -257,33 +311,55 @@ div.name{
 div.resume{
     display: inline-grid;
     grid-column: 3;
-    grid-row-start: 2;
-    justify-self: stretch;
-    align-self: stretch;
+    grid-row-start: 3;
+    justify-self: center;
+    align-self: center;
     margin-top: 5%;
 }
 
-div.r_title{
-    display: grid;
-    justify-content: center;
-    margin-right: 7%;
-    margin-bottom: 3%;
-    font-size: 1.5em;
-    font-family: 'Roboto', serif;
+
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 3px 0px #000066;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #000066;
+	box-shadow:inset 0px 1px 3px 0px #000066;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000066), color-stop(1, #000066));
+	background:-moz-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-webkit-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-o-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-ms-linear-gradient(top, #000066 5%, #000066 100%);
+	background:linear-gradient(to bottom, #000066 5%, #000066 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000066', endColorstr='#000066',GradientType=0);
+	background-color:#000066;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #283966;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000066), color-stop(1, #000066));
+	background:-moz-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-webkit-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-o-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-ms-linear-gradient(top, #000066 5%, #000066 100%);
+	background:linear-gradient(to bottom, #000066 5%, #000066 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000066', endColorstr='#000066',GradientType=0);
+	background-color:#000066;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
 
-.resume_file{
-    display: grid;
-    justify-content: center;
-    margin-left: 14%;
-    height: 800px;
-    width: 600px;
-
-}
-
-.r_link{
-    display: none;
-}
 
 
 
@@ -305,7 +381,7 @@ form li{
     display: inline-block;
 }
 
-#flname{
+#flname, #flname2{
     display: inline-block;
     margin-bottom: 1%;
     padding-right: 2%;
@@ -336,6 +412,48 @@ form li{
     font-family: 'Arial', serif;
 }
 
+.myCButton {
+	-moz-box-shadow:inset 0px 1px 3px 0px #000066;
+	-webkit-box-shadow:inset 0px 1px 3px 0px #000066;
+	box-shadow:inset 0px 1px 3px 0px #000066;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000066), color-stop(1, #000066));
+	background:-moz-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-webkit-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-o-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-ms-linear-gradient(top, #000066 5%, #000066 100%);
+	background:linear-gradient(to bottom, #000066 5%, #000066 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000066', endColorstr='#000066',GradientType=0);
+	background-color:#000066;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+    text-shadow:0px -1px 0px #283966;
+    margin-top: 2%;
+}
+.myCButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #000066), color-stop(1, #000066));
+	background:-moz-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-webkit-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-o-linear-gradient(top, #000066 5%, #000066 100%);
+	background:-ms-linear-gradient(top, #000066 5%, #000066 100%);
+	background:linear-gradient(to bottom, #000066 5%, #000066 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000066', endColorstr='#000066',GradientType=0);
+	background-color:#000066;
+}
+.myCButton:active {
+	position:relative;
+	top:1px;
+}
+
 
 
 
@@ -354,7 +472,6 @@ form li{
 
         nav a{
             margin: 5px;
-            padding: 20px;
         }
         
         nav li{
@@ -414,7 +531,7 @@ form li{
             grid-column: 1;
             grid-row: 2;
             margin-left: 3%;
-            margin-top: 25%%;  
+            margin-top: 25%;  
             margin-right: 5px%;  
             justify-self: center;
         }
@@ -443,20 +560,63 @@ form li{
             width: 300px;
         } 
     
+        .ws_title{
+            display:block;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .container{
+            display: block;
+            margin: 0;
+            padding: 0;
+            width: 90vw;
+            margin-left: 5%;
+        }
+    
+        .work, .itunes_w{
+            padding-left: 30%;
+            width: 40%;
+            height: 40%;
+            padding-top: 3%;
+        }
+
+        .ws_description{
+            padding-bottom: 3%;
+            border-top: none;
+            padding-top: 4%;
+        }
+
+        #myBtn{
+            margin-top: 2%;
+        }
+
+
+        form li{
+            display: block;
+            margin: 0;
+        }
+        textarea{
+            width: 90%;
+        }
     }
+
+
+
+
 
 
 @media only screen and (max-width: 600px){
 
     header{
-        height: 13vh;
+        height: 15vh;
     }
     
     nav li{
         display: block;
         font-size: .75em;
         line-height: 20px;
-        margin-top: 0px;
+        margin-top: 3px;
         
     }
 
@@ -510,13 +670,28 @@ div.r_title{
 .resume_file{
     display: none;
 }
-.r_link{
+.myButton{
     display: inline;
-    color: #000000;
     font-size: 1.5em;
-    text-align: center;
+    justify-self: center;
     margin-bottom: 6%;
     font-family: 'Roboto', 'Arial', sans-serif;
+}
+.w_title{
+    text-align: center;
+}
+
+.home{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.home_p{
+    margin-left: 20%;
+}
+.slide_pics{
+    width: 80%; 
+    margin-left: 10%
 }
 }
 

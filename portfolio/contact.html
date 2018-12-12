@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/natalielogo.png"/>
     <title>Contact</title>
 </head>
 <body>
-    <main>
 
         <header>
+                <a class="skip-main" href="#main">Skip to main content</a>
                 <nav>
                 <ul>  
                     <li><a href = "index.html"> Home </a></li>
@@ -25,7 +26,7 @@
                 </ul>
                 </nav>
             </header>
-
+    <main id="main" tabindex="0">
     <div class= "contact">
 
         <h1 class = "c_title"> Contact </h1>
@@ -34,23 +35,26 @@
 
         <p class="contact_mes"> Feel free to reach out, I'm happy to chat!</p>
 
-        <form class = "contact_form">
+        <form class = "contact_form" onsubmit= "return checkForm()" action="https://formspree.io/nmcieslak@gmail.com" method="POST">
             <fieldset>
                 <ul>
-                <li id="flname"><label>Name: <input type="text" name="flname" aria-label="first and last name" id ="flname" placeholder="First and Last"></label><br></li>
+                <li id="flname2"><label>Name: <input type="text" name="flname" aria-label="first and last name" id ="flname" placeholder="First and Last"></label></li>
                 <li><label> Email: <input type="email" name="email" aria-label= "email address" id = "email"></label><br></li>
-                <li><label>Message: <textarea rows="12" cols="75" name="message" aria-label= "message to Natalie" id= "message"></textarea></label></li><br>
-                <input type="submit" value="Submit">
+                <li><label>Message: <textarea rows="12" cols="75" name="message" aria-label= "message to Natalie" id= "message"></textarea></label></li>
                 </ul>
+                <input type="submit" value="Submit" class="myCButton">
             </fieldset>
         </form>
 
     </div>
     </main>
-
     <script>
-
-    </script>
+            function checkForm(){
+            if(document.querySelector("#flname").value == "" || document.querySelector("#email").value == "" || document.querySelector("#message").value == ""){
+                alert("You need to fill out all parts of the form.");
+                return false
+            }}
+        </script>
     
 </body>
 </html>
